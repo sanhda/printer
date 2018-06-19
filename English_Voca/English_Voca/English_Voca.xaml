@@ -1,0 +1,120 @@
+<Window 
+       xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation" 
+       xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml" 
+       Title="Make Me Mad" Height="600" Width="800" Background="#FFE5BFFB" OpacityMask="#FFE85B5B" BorderBrush="#FFDC5D5D" Foreground="{x:Null}" WindowStartupLocation="CenterScreen" ResizeMode="NoResize">
+    <Grid>
+
+        <StackPanel Margin="10">
+
+            <StackPanel Orientation="Horizontal">
+
+                <Button x:Name="Button_Run" Width="40" Height="40" Margin="0" Click="OnRun">
+
+                    <StackPanel>
+                        <Image x:Name="Image_Run" Width="30" Height="30"/>
+                    </StackPanel>
+
+                </Button>
+
+                <Button x:Name="Button_Done" Width="40" Height="40" Margin="10,0,0,0" Click="OnDone">
+
+                    <StackPanel>
+                        <Image x:Name="Image_Done" Width="30" Height="30">
+
+                        </Image>
+                    </StackPanel>
+
+                </Button>
+
+
+                <Button x:Name="Button_Clock" Width="40" Height="40" Margin="10,0,0,0" Click="OnClock">
+
+                    <StackPanel>
+                        <Image x:Name="Image_Clock" Width="30" Height="30">
+
+                        </Image>
+                    </StackPanel>
+
+                </Button>
+
+                <Button Width="40" Height="40" Margin="10,0,0,0" Click="OnName">
+
+                    <StackPanel>
+                        <Image x:Name="Image_Name" Width="30" Height="30">
+
+                        </Image>
+                    </StackPanel>
+
+                </Button>
+
+                <Button x:Name="Button_Number" Width="40" Height="40" Margin="10,0,0,0" Click="OnNumber">
+
+                    <StackPanel>
+                        <Image x:Name="Image_Number" Width="30" Height="30">
+
+                        </Image>
+                    </StackPanel>
+
+                </Button>
+
+                <Button x:Name="Button_Question" Width="40" Height="40" Margin="10,0,0,0" Click="OnQuestion">
+
+                    <StackPanel>
+                        <Image x:Name="Image_Question" Width="30" Height="30">
+
+                        </Image>
+                    </StackPanel>
+
+                </Button>
+
+                <Button x:Name="Button_Exit" Width="40" Height="40" Margin="10,0,0,0" HorizontalAlignment="Right" VerticalAlignment="Top" HorizontalContentAlignment="Center" Click="OnExit">
+
+                    <StackPanel>
+                        <Image x:Name="Image_Exit" Width="30" Height="30" HorizontalAlignment="Right"/>
+                    </StackPanel>
+
+                </Button>
+
+            </StackPanel>
+            <Separator Height="15" Margin="0"/>
+
+            <StackPanel/>
+            <StackPanel Orientation="Horizontal">
+                
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                    <Image x:Name="Image_Dictionary" Width="30" Height="30" HorizontalAlignment="Right"/>
+                    <Label Content="Dictionary" Foreground="#FF2F1DEA" HorizontalAlignment="Center" FontWeight="Bold" Background="{x:Null}"/>
+                    </StackPanel>
+                    <ListView x:Name="ListView_Dictionary" Height="470" Width="185" Margin="0,5,0,0" MouseDoubleClick="OnButtonDictionary"/>
+                </StackPanel>
+                
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Image x:Name="Image_RedBox" Width="30" Height="30" HorizontalAlignment="Right"/>
+                        <Label Content="RedBox" Foreground="#FFE60D5C" HorizontalAlignment="Center" FontWeight="Bold"/>
+                    </StackPanel>
+                    <ListView x:Name="ListView_RedBox" Height="470" Width="185" Margin="10,5,0,0" MouseDoubleClick="OnButtonRedBox"></ListView>
+                </StackPanel>
+
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Image x:Name="Image_YellowBox" Width="30" Height="30" HorizontalAlignment="Right"/>
+                    <Label Content="YellowBox" Foreground="#FFF7F70B" HorizontalAlignment="Center" FontWeight="Bold"/>
+                        </StackPanel>
+                    <ListView x:Name="ListView_YellowBox" Height="470" Width="185" Margin="10,5,0,0" MouseDoubleClick="OnButtonYellowBox"></ListView>
+                </StackPanel>
+
+                <StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Image x:Name="Image_GreenBox" Width="30" Height="30" HorizontalAlignment="Right"/>
+                        <Label Content="GreenBox" Foreground="#FF0EF959" HorizontalAlignment="Center" FontWeight="Bold"/>
+                    </StackPanel>
+                    <ListView x:Name="ListView_GreenBox" Height="470" Width="185" Margin="10,5,0,0" MouseDoubleClick="OnButtonGreenBox"/>
+                </StackPanel>
+
+            </StackPanel>
+        </StackPanel>
+
+    </Grid>
+</Window> 
